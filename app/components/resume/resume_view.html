@@ -1,0 +1,55 @@
+<div id="my_resume">
+  <div class="resume_div">
+    <h1>{{resume.info.name}}</h1>
+    <p>{{resume.info.phone}} | {{resume.info.email}} | {{resume.info.location}} | <a href={{resume.info.github_url}}>github.com/brandonDeen</a></p>
+  </div>
+
+  <div class="resume_div">
+    <h3>Mission Statement</h3>
+    <p>{{resume.info.statement}}</p>
+  </div>
+
+  <div class="resume_div">
+    <h3>Skills</h3>
+    <ul>
+      <li ng-repeat="s in resume.skills">{{s}}</li>
+    </ul>
+  </div>
+
+  <div class="resume_div">
+    <h3>Experience</h3>
+    <ul>
+      <li ng-repeat="x in resume.experience">
+        <h4>{{x.employer}}</h4> {{x.title}}, {{x.time}}
+        <ul><li ng-repeat="d in x.description">{{d}}</li></ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="resume_div">
+    <h3>Projects</h3>
+    <ul>
+      <li ng-repeat="p in resume.projects">{{p.name}}
+        <ul>
+          <li>Description: {{p.description}}</li>
+          <li>Using: {{p.technologies_used}}</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="resume_div">
+    <h3>Education</h3>
+    <ul>
+      <li ng-repeat="e in resume.education">
+        <h4>{{e.school}}</h4>
+          <ul>
+            <li>Degree: {{e.degree}} in {{e.major}}</li>
+            <li>GPA: {{e.gpa}}</li>
+            <li>Graduated: {{e.graduation_date}}</li>
+          </ul>
+      </li>
+    </ul>
+  </div>
+
+</div>

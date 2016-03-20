@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <!-- Add the meta info -->
+    <meta charset="utf-8">
+    <!-- <title>Brandon Deen</title> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add the styles -->
+    <link  rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" ></link>
+    <link  rel="stylesheet" href="assets/css/custom.css" ></link>
+    <!-- Add Angular -->
+    <script src="assets/libs/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.min.js"></script>
+    <script src="app/app.js"></script>
+  </head>
+
+  <body ng-app="brandon">
+    <header ng-controller="header_controller">
+      <div ng-include src="'app/shared/header/header_view.html'"></div>
+    </header>
+
+    <div id="main" class="container body-content app-container"><section ng-view></section></div>
+
+    <footer ng-controller="footer_controller">
+      <div ng-include src="'app/shared/footer/footer_view.html'"></div>
+    </footer>
+
+    <!-- Add the Library Scripts -->
+    <script src="assets/libs/jquery-1.12.1.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/libs/jqBootstrapValidation.js"></script>
+
+    <!-- Add my Scripts -->
+    <script src="app/shared/header/header_controller.js"></script>
+    <script src="app/shared/footer/footer_controller.js"></script>
+    <script src="app/components/home/home_controller.js"></script>
+    <script src="app/components/resume/resume_controller.js"></script>
+    <script src="app/components/quotes/quotes_controller.js"></script>
+  </body>
+</html>

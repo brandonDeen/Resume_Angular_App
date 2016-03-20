@@ -1,0 +1,45 @@
+{
+  "info": {
+    "name": "Data",
+    "phone": "",
+    "email": "data94@starfleet.com",
+    "location": "USS Enterprise (Space)",
+    "github_url": "I wish I had a github account",
+    "statement": "An android on a neverending endeavor to increase his humanity and desire for human emotional experience. I also program"
+  },
+
+  "skills": [
+    "Design: Requirements Elicitation, UML Design, Sprint Planning",
+    "Development: Assembly, C(if I am feeling frisky)",
+    "Testing: I wish there was assemblyUnit"
+  ],
+
+  "education": [
+    {
+      "school": "Starfleet Academy",
+      "degree": "BS",
+      "major": "Computational Science",
+      "gpa": "4.0",
+      "graduation_date": "2015"
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "Holo-Deck Upgrade",
+      "description": "I created a more adaptive Holo-Matrix for the Holo-Deck",
+      "technologies_used": "Assemby"
+    }
+  ],
+
+  "experience": [
+    {
+      "employer": "Starfleet",
+      "title": "Lieutenant Commander",
+      "time": "2350 - 2379",
+      "description": [
+        "Current Role - Chief Operations Officer: USS Enterprise: ...",
+        "Past Role(s) - Starfleet Cadet: ..."]
+    }
+  ]
+}
